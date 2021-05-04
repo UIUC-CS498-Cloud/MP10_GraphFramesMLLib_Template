@@ -1,6 +1,9 @@
-# CS 498 - MP11 Templates
+# CS 498 - MP10 GraphFrames and MLLib Templates
 
-This repository contains templates to help you get started with MP11.
+This repository contains templates to help you get started with MP10.
+
+## Log
+Last updated in May 2021, by Sam Cheng (rcheng12@illinois.edu).
 
 # ML vs MLLib
 - Parts B and D (MLLib exercises) can be solved using either the
