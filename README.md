@@ -3,6 +3,8 @@
 This repository contains templates to help you get started with MP10.
 
 ## Log
+Last updated in May 2021, by Yifan Chen (yifanc3@illinois.edu).
+
 Last updated in May 2021, by Sam Cheng (rcheng12@illinois.edu).
 
 # ML vs MLLib
@@ -14,9 +16,9 @@ Make sure you rename the python files corresopnding to parts B and D to
 
 # Execution instructions
 - Each file can be executed by running
-```spark-submit --packages graphframes:graphframes:0.7.0-spark2.4-s_2.11 part_xxx.py```
+```spark-submit part_xxx.py```
 - You can alternatively run the following to get rid of spark logs
-```spark-submit --packages graphframes:graphframes:0.7.0-spark2.4-s_2.11 part_xxx.py 2> /dev/null```
+```spark-submit part_xxx.py 2> /dev/null```
 - Make sure that you have the given dataset in the directory you are running
 the given code from. The structure this repository is arranged in is recommended.
 - While the extra argument for graphframes is not required for part b
