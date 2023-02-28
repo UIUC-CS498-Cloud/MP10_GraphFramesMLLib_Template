@@ -1,5 +1,5 @@
-# Fetch ubuntu 18.04 LTS docker image
-FROM ubuntu:18.04
+# Fetch ubuntu 22.04 LTS docker image
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV PYSPARK_PYTHON=python3
@@ -7,7 +7,7 @@ ENV PYSPARK_PYTHON=python3
 RUN apt-get update && \
 	apt-get install -y --no-install-recommends build-essential\
 	expect git vim zip unzip wget openjdk-8-jdk wget sudo
-RUN apt-get install -y python3 python3-pip python-dev build-essential python-pip
+RUN apt-get install -y python3 python3-pip python-dev-is-python3 build-essential
 RUN cd /usr/local/bin; \
 ln -s /usr/bin/python3 python;
 
