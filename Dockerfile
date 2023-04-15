@@ -25,9 +25,11 @@ RUN pip install numpy && pip3 install numpy
 
 RUN echo "alias spark-submit='/usr/local/spark/bin/spark-submit'" >> ~/.bashrc
 
+# Graphframes is only compatible with spark3.2 currently:
+
 RUN cd /usr/local/spark/jars/ && \
 	wget https://repos.spark-packages.org/graphframes/graphframes/0.8.2-spark3.2-s_2.12/graphframes-0.8.2-spark3.2-s_2.12.jar && \
- 	chmod a+rwx graphframes-0.8.2-spark3.2-s_2.12.jar
+ 	chmod a+rwx graphframes-0.8.2-spark3.2-s_2.12.jar 
 
 ENV PYTHONPATH=:/usr/local/spark/jars/graphframes-0.8.2-spark3.2-s_2.12.jar
 
