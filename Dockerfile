@@ -21,7 +21,7 @@ RUN curl -s "https://archive.apache.org/dist/spark/spark-3.2.3/spark-3.2.3-bin-h
     && ln -s /usr/local/spark-3.2.3-bin-hadoop3.2 /usr/local/spark \
     && chmod a+rwx -R /usr/local/spark/
 
-RUN pip install numpy && pip3 install numpy
+RUN pip3 install Cython && pip3 install numpy
 
 RUN echo "alias spark-submit='/usr/local/spark/bin/spark-submit'" >> ~/.bashrc
 
