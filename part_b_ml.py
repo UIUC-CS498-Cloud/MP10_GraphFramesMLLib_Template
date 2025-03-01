@@ -16,8 +16,7 @@ MAX_ITERATIONS = 100
 INITIALIZATION_MODE = "random"
 
 sc = SparkContext()
-spark = SparkSession.builder.appName('KMeansClustering').getOrCreate()
-
+spark = SparkSession(sc)
 
 def get_clusters(df, num_clusters, max_iterations, initialization_mode,
                  seed):
