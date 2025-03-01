@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 from graphframes import *
 
 sc = SparkContext()
-spark = SparkSession.builder.appName('fun').getOrCreate()
+spark = SparkSession.builder.appName('ShortestPath').getOrCreate()
 
 
 def get_shortest_distances(graphframe, dst_id):

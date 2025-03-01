@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 from graphframes import *
 
 sc = SparkContext()
-spark = SparkSession.builder.appName('fun').getOrCreate()
+spark = SparkSession.builder.appName('ConnectedComponents').getOrCreate()
 
 
 def get_connected_components(graphframe):
