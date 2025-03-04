@@ -1,10 +1,10 @@
 from pyspark.ml.classification import RandomForestClassifier
 from pyspark import SparkContext
-from pyspark.sql import SQLContext
+from pyspark.sql import SparkSession
 from pyspark.ml.linalg import Vectors
 
 sc = SparkContext()
-sqlContext = SQLContext(sc)
+spark = SparkSession.builder.appName('RandomForest').getOrCreate()
 
 
 def predict(df_train, df_test):

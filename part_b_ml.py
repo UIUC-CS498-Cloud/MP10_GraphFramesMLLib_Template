@@ -1,5 +1,5 @@
 from pyspark import SparkContext
-from pyspark.sql import SQLContext
+from pyspark.sql import SparkSession
 from pyspark.ml.clustering import KMeans
 from pyspark.ml.linalg import Vectors
 import pyspark.sql.functions as F
@@ -16,8 +16,7 @@ MAX_ITERATIONS = 100
 INITIALIZATION_MODE = "random"
 
 sc = SparkContext()
-sqlContext = SQLContext(sc)
-
+spark = SparkSession(sc)
 
 def get_clusters(df, num_clusters, max_iterations, initialization_mode,
                  seed):
