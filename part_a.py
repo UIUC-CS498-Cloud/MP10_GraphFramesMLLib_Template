@@ -19,7 +19,7 @@ def get_connected_components(graphframe):
 if __name__ == "__main__":
     vertex_list = []
     edge_list = []
-    with open('dataset/graph.data') as f:  # Do not modify
+    with open('dataset/graph.data') as f:  # DO NOT MODIFY
         for line in f:
             src = None  # TODO: Parse src from line
             dst_list = []  # TODO: Parse dst_list from line
