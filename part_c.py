@@ -27,7 +27,7 @@ if __name__ == "__main__":
             edge_list += [(src, dst) for dst in dst_list]
 
     vertices = spark.createDataFrame(...)  # TODO: Create dataframe for vertices
-    edges = spark.createDataFrame(...)  # TODO: Create dataframe for edges
+    edges = spark.createDataFrame(...)     # TODO: Create dataframe for edges
 
     g = GraphFrame(vertices, edges)
     sc.setCheckpointDir("/tmp/shortest-paths")
